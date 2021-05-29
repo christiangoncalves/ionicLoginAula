@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form  #form="ngForm" (ngSubmit)="register()">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div padding>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="Email" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button type="submit" expand="block">Sing In</ion-button>
+          </div>
+          <div padding>
+            <ion-item style="text-align: center;">
+              <a href="" text-center>Forgot Password?</a>
+            </ion-item>
+          </div>
+        </ion-col>
+    </ion-grid>
+  </form>
+</ion-content>
